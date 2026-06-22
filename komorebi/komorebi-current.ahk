@@ -1,6 +1,8 @@
 #Requires AutoHotkey 2
 #SingleInstance Force
 
+   ;Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+
 CoordMode "ToolTip", "Screen"
 CoordMode "Mouse",   "Screen"
 tipX := 800
@@ -12,6 +14,13 @@ Info(string) {
    len := strlen(string)
    ToolTip string, tipX-len*3.44, tipY
 }
+
+#HotIf WinActive("ahk_exe alacritty.exe")
+!Space::{
+    Info "!Space -> !b"
+    Send "!b"
+}
+#HotIf
 
 ~Escape:: {
     Sleep 100
@@ -46,12 +55,12 @@ KomoRun(cmd) {
 }
 
 #r:: {
-   Info "#r Flow.Launcher.exe"
+   Info "#r"
    Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
 }
 
 F2:: {
-   Info "Wrapper: Start-Komorebi-current.ps1"
+   Info "F2 Wrapper: Start-Komorebi-current.ps1"
    Run "pwsh -NoExit -WorkingDirectory C:\Users\morty\.config\komorebi -Command .\Start-Komorebi-current.ps1",,"Hide"
 }
 
@@ -61,11 +70,11 @@ F2:: {
 
 #enter:: {
    cmd := "alacritty"
-   Run cmd
+   ;Run cmd
    Sleep 300
 
    KomoRunWait("promote")
-   Info "Run " . cmd . " Sleep 200 KomoRunWait (promote)"
+   Info "#enter"
 }
 
 ^#k:: {
@@ -73,10 +82,10 @@ F2:: {
 }
 
 #w:: {
-   Run "firefox.exe"
+   ;Run "firefox.exe"
    Sleep 1000
-   KomoRunWait("promote")
-   Info "#w firefox.exe (promote)"
+   ;KomoRunWait("promote")
+   Info "#w"
 }
 
 +#r:: KomoRunWait("retile")
@@ -87,23 +96,30 @@ F2:: {
    reload                   ; Reloads this script
 }
 
-#q:: KomoRunWait("close")
+#q:: {
+    Info "#q"
+    KomoRunWait("close")
+}
+
 +#q:: {
+   Info "+#q"
    ;Run "pwsh -NoExit -Command C:\Users\morty\.config\komorebi\Wrap-Reboot.ps1"
-   Run "shutdown.exe /r /t 5"
-   Info ThisHotkey
+   ;Run "shutdown.exe /r /t 5"
 }
 
 ^#e:: {
-   Info "Edit: komorebi-current.ahk"
-   KomoRun("preselect-direction left")
-   Sleep 300
-   RunWait( format("nvim.exe {}", "C:\Users\morty\.config\komorebi\komorebi-current.ahk") )
-   reload
+   Info "^#e"
+   ;KomoRun("preselect-direction left")
+   ;Sleep 300
+   ;RunWait( format("nvim.exe {}", "C:\Users\morty\.config\komorebi\komorebi-current.ahk") )
+   ;reload
 }
 
 
-+#enter::KomoRunWait("promote")
++#enter:: {
+    Info "+#enter"
+    KomoRunWait("promote")
+}
 
 ;; Move windows across workspaces
 #+1::KomoRunWait("move-to-workspace 0")
@@ -142,3 +158,7 @@ F2:: {
 ;; Manipulate windows
 #m::KomoRunWait("toggle-monocle")
 #t::KomoRunWait("toggle-monocle")
+
+
+   ;Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+
