@@ -1,0 +1,7 @@
+{
+  "keyMappings": "# Insert your preferred key mappings here.\nmap <C-d> scrollPageDown",
+  "newTabCustomUrl": "https://start.duckduckgo.com",
+  "newTabDestination": "customUrl",
+  "scrollStepSize": 120,
+  "settingsVersion": "2.4.2"
+}
