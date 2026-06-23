@@ -5,4 +5,4 @@ vim.opt.background		= dark
 vim.cmd.colorscheme		('habamax')
 
 vim.g.mapleader			= " "
-vim.keymap.set	( "n", "<leader>so", ":source<CR>" )
+vim.keymap.set	( "n", "<leader>ex", ":Explore<CR>" )
