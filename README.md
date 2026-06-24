@@ -1,7 +1,10 @@
 #### Windows C:\Users\morty\.config\
 
+$Env:XDG_CONFIG_HOME = C:\Users\morty\.config\
+
 Local:
 ```ps1
+c $Env:CONFIG_HOME
 git init
 echo ".git/" >> .gitignore
 git status
