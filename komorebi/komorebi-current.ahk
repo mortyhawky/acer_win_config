@@ -1,12 +1,10 @@
 #Requires AutoHotkey 2
 #SingleInstance Force
 
-   ;Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
-
 CoordMode "ToolTip", "Screen"
 CoordMode "Mouse",   "Screen"
 tipX := 800
-tipY := 8
+tipY := 7
 
 ;;; Show tooltip, top center of bar
 Info(string) {
@@ -15,6 +13,18 @@ Info(string) {
    ToolTip string, tipX-len*3.44, tipY
 }
 
+PID := 0
+PID := ProcessExist("Flow.Launcher.exe")
+
+if( !PID ) {
+   Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+   Info "Flow.Launcher.exe is Started..."
+} 
+else {
+   Info("Flow.Launcher.exe is already running with PID := " . PID)
+}
+
+; Send Alt-b if alacritty as running, tmux prefix
 #HotIf WinActive("ahk_exe alacritty.exe")
 !Space::{
     Info "!Space -> !b"
@@ -41,7 +51,7 @@ cmd :=
     . "-Command .\Start-Komorebi-current.ps1"
 )
 Run(cmd, , "Hide")
-Info "AutoHotkey " . A_PtrSize*8 . "bit " . A_ScriptName
+;Info "AutoHotkey " . A_PtrSize*8 . "bit " . A_ScriptName
 
 KomoRunWait(cmd) {
    Info "RunWait komorebic.exe " . cmd
@@ -55,8 +65,9 @@ KomoRun(cmd) {
 }
 
 #r:: {
-   Info "#r"
+   cmd := "Flow.Launcher.exe"
    Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+   Info "#r " . "cmd := " . cmd
 }
 
 F2:: {
@@ -71,10 +82,10 @@ F2:: {
 #enter:: {
    cmd := "alacritty"
    ;Run cmd
-   Sleep 300
+   ;Sleep 300
 
-   KomoRunWait("promote")
-   Info "#enter"
+   ;KomoRunWait("promote")
+   Info "#enter " . "cmd := " . cmd
 }
 
 ^#k:: {
@@ -82,10 +93,11 @@ F2:: {
 }
 
 #w:: {
+   cmd := "firefox"
    ;Run "firefox.exe"
-   Sleep 1000
+   ;Sleep 1000
    ;KomoRunWait("promote")
-   Info "#w"
+   Info "#w " . "cmd := " . cmd
 }
 
 +#r:: KomoRunWait("retile")
@@ -158,7 +170,3 @@ F2:: {
 ;; Manipulate windows
 #m::KomoRunWait("toggle-monocle")
 #t::KomoRunWait("toggle-monocle")
-
-
-   ;Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
-

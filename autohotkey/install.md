@@ -3,3 +3,4 @@
 ```ps1
 scoop install autohotkey
 ```
+
