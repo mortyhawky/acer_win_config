@@ -18,3 +18,4 @@ vim.keymap.set	( {"n","i"}, "<C-s>",      "<Esc>:nohls<CR>:write<CR>"   )
 vim.keymap.set	( "n",       "<leader>bn", ":bn<CR>" )
 vim.keymap.set	( "n",       "<leader>bp", ":bp<CR>" )
 
+vim.keymap.set  ( "n",       "<C-h>",      ":echo 'C-h'<CR>"   )
