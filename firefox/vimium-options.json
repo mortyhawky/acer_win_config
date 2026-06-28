@@ -1,4 +1,5 @@
 {
+  "exclusionRules": [],
   "keyMappings": "# Insert your preferred key mappings here.\nmap <C-d> scrollPageDown\nmap <C-u> scrollPageUp\nmap J nextTab\nmap K previousTab",
   "newTabCustomUrl": "https://start.duckduckgo.com",
   "newTabDestination": "customUrl",

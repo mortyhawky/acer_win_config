@@ -19,3 +19,9 @@ vim.keymap.set	( "n",       "<leader>bn", ":bn<CR>" )
 vim.keymap.set	( "n",       "<leader>bp", ":bp<CR>" )
 
 vim.keymap.set  ( "n",       "<C-h>",      ":echo 'C-h'<CR>"   )
+
+-- Ctrl+h,j are remapped in alacritty to F13 and F14
+vim.keymap.set  ( "n",       "<F13>",      ":wincmd h<CR>"   )
+vim.keymap.set  ( "n",       "<F14>",      ":wincmd j<CR>"   )
+vim.keymap.set  ( "n",       "<C-k>",      ":wincmd k<CR>"   )
+vim.keymap.set  ( "n",       "<C-l>",      ":wincmd l<CR>"   )
