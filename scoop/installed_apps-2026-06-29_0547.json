@@ -1,0 +1,233 @@
+{
+    "apps": [
+        {
+            "Info": "",
+            "Updated": "2026-06-27T07:31:49.7081169+02:00",
+            "Source": "main",
+            "Version": "26.02",
+            "Name": "7zip"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-21T20:29:33.175615+02:00",
+            "Source": "extras",
+            "Version": "0.17.0",
+            "Name": "alacritty"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-14T09:35:03.2856694+02:00",
+            "Source": "extras",
+            "Version": "2.0.26",
+            "Name": "autohotkey"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-10T19:44:31.9644163+02:00",
+            "Source": "main",
+            "Version": "0.26.1",
+            "Name": "bat"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T03:52:03.1060302+02:00",
+            "Source": "main",
+            "Version": "2026-05-14",
+            "Name": "cacert"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T04:00:41.3660443+02:00",
+            "Source": "main",
+            "Version": "5.97.3",
+            "Name": "coreutils"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-07T21:11:01.7609093+02:00",
+            "Source": "main",
+            "Version": "3.14.1",
+            "Name": "dark"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T12:34:32.5638314+02:00",
+            "Source": "extras",
+            "Version": "1.4.1.1032",
+            "Name": "everything"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-09T09:03:40.4896913+02:00",
+            "Source": "main",
+            "Version": "0.23.4",
+            "Name": "eza"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-29T05:28:43.3481791+02:00",
+            "Source": "main",
+            "Version": "2.65.2",
+            "Name": "fastfetch"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-27T07:32:02.5141582+02:00",
+            "Source": "extras",
+            "Version": "152.0.3",
+            "Name": "firefox"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T12:30:50.2350212+02:00",
+            "Source": "extras",
+            "Version": "2.1.3",
+            "Name": "flow-launcher"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T03:21:41.8260699+02:00",
+            "Source": "main",
+            "Version": "2.95.0",
+            "Name": "gh"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-07T21:09:07.2366787+02:00",
+            "Source": "main",
+            "Version": "2.54.0",
+            "Name": "git"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-23T05:41:40.4351677+02:00",
+            "Source": "main",
+            "Version": "2.5.20",
+            "Name": "gnupg"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-14T09:44:24.5216269+02:00",
+            "Source": "main",
+            "Version": "3.11",
+            "Name": "grep"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-07T21:10:34.148589+02:00",
+            "Source": "main",
+            "Version": "2.67.9",
+            "Name": "innounp"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T03:41:17.5053192+02:00",
+            "Source": "nerd-fonts",
+            "Version": "3.4.0",
+            "Name": "JetBrainsMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-14T09:37:44.6945545+02:00",
+            "Source": "extras",
+            "Version": "0.1.41",
+            "Name": "komorebi"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-12T11:58:33.2081038+02:00",
+            "Source": "main",
+            "Version": "704",
+            "Name": "less"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-12T11:58:44.3289896+02:00",
+            "Source": "main",
+            "Version": "0.12.3",
+            "Name": "neovim"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T20:27:57.0966004+02:00",
+            "Source": "main",
+            "Version": "3.3.6",
+            "Name": "psmux"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T03:24:24.9571711+02:00",
+            "Source": "main",
+            "Version": "7.6.3",
+            "Name": "pwsh"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-12T14:06:08.7187658+02:00",
+            "Source": "main",
+            "Version": "3.14.6",
+            "Name": "python"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-28T07:20:57.1774687+02:00",
+            "Source": "main",
+            "Version": "4.9",
+            "Name": "sed"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-07T13:46:06.0485163+02:00",
+            "Source": "main",
+            "Version": "0.2020.01.26",
+            "Name": "sudo"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-12T11:58:45.4113202+02:00",
+            "Source": "extras",
+            "Version": "0.14.4",
+            "Name": "vifm"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-05-16T06:28:43.3901868+02:00",
+            "Source": "extras",
+            "Version": "20240203-110809-5046fc22",
+            "Name": "wezterm"
+        },
+        {
+            "Info": "",
+            "Updated": "2026-06-20T03:52:04.3220823+02:00",
+            "Source": "main",
+            "Version": "1.21.4",
+            "Name": "wget"
+        }
+    ],
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2026-06-29T03:26:38+02:00",
+            "Manifests": 1593
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2026-06-29T05:03:39+02:00",
+            "Manifests": 2322
+        },
+        {
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2026-06-27T20:09:10+02:00",
+            "Manifests": 367
+        },
+        {
+            "Name": "nonportable",
+            "Source": "https://github.com/ScoopInstaller/Nonportable",
+            "Updated": "2026-06-27T19:34:03+02:00",
+            "Manifests": 132
+        }
+    ]
+}
