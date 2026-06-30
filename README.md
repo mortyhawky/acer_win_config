@@ -1,4 +1,4 @@
-#### Windows C:\Users\morty\.config\
+#### Windows Acer Configuration
 
 $Env:XDG_CONFIG_HOME = C:\Users\morty\.config\
 

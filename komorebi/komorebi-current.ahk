@@ -32,9 +32,10 @@ else {
 }
 #HotIf
 
+; ~ = pass-through
 ~Escape:: {
     Sleep 100
-    Info "Escape" 
+    Info "<Esc>"
 }
 
 ~^s:: {
@@ -113,14 +114,16 @@ F2:: {
     KomoRunWait("close")
 }
 
-+#q:: {
-   Info "+#q"
+#+Q:: {
+   Info "<#-S-Q>"
+   ;Info "+#q"
    ;Run "pwsh -NoExit -Command C:\Users\morty\.config\komorebi\Wrap-Reboot.ps1"
    ;Run "shutdown.exe /r /t 5"
 }
 
-^#e:: {
-   Info "^#e"
+#^e:: {
+   ;Info "^#e"
+   Info "<#-C-e>"
    ;KomoRun("preselect-direction left")
    ;Sleep 300
    ;RunWait( format("nvim.exe {}", "C:\Users\morty\.config\komorebi\komorebi-current.ahk") )
