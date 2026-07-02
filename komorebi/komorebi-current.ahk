@@ -68,11 +68,11 @@ KomoRun(cmd) {
 #r:: {
    cmd := "Flow.Launcher.exe"
    Run "C:\Users\morty\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
-   Info "#r " . "cmd := " . cmd
+   Info "<W-r>" . " cmd := " . cmd
 }
 
 F2:: {
-   Info "F2 Wrapper: Start-Komorebi-current.ps1"
+   Info "<F2> Wrapper: Start-Komorebi-current.ps1"
    Run "pwsh -NoExit -WorkingDirectory C:\Users\morty\.config\komorebi -Command .\Start-Komorebi-current.ps1",,"Hide"
 }
 
@@ -82,7 +82,7 @@ F2:: {
 
 #enter:: {
    cmd := "alacritty"
-   ;Run cmd
+   Run cmd
    ;Sleep 300
 
    ;KomoRunWait("promote")
@@ -95,10 +95,10 @@ F2:: {
 
 #w:: {
    cmd := "firefox"
-   ;Run "firefox.exe"
+   Run "firefox.exe"
    ;Sleep 1000
    ;KomoRunWait("promote")
-   Info "#w " . "cmd := " . cmd
+   Info "<#-w>" . " cmd := " . cmd
 }
 
 +#r:: KomoRunWait("retile")
